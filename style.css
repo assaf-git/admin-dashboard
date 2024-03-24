@@ -1,0 +1,87 @@
+/* * {
+    margin: 0;
+} */
+
+.container {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 3fr 2fr;
+    /* grid-template-rows: 1fr 2fr; */
+    grid-template-areas: 
+    "search user-p"
+    "user-i buttons";
+    border: 1px solid gray;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.header .search-bar {
+    grid-area: search;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.search-bar input {
+    width: 100%;
+}
+
+.header .user-profile {
+    grid-area: user-p;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.user-profile img {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+.user-profile img + p {
+    padding: 15px;
+}
+
+.header .user-info {
+    grid-area: user-i;
+    display: flex;
+}
+
+.user-info img {
+    height: 70px;
+    width: 70px;
+    padding-right: 25px;
+}
+
+.header .header-buttons {
+    grid-area: buttons;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.header-buttons button {
+    width: 70px;
+}
+
+
+.sidebar {
+    display: grid;
+    grid-area: sidebar;
+}
+
+.main {
+    display: grid;
+    grid-area: main;
+}
