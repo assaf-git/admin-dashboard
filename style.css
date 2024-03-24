@@ -77,8 +77,21 @@
 
 
 .sidebar {
-    display: grid;
     grid-area: sidebar;
+    display: grid;
+    /* grid-template-columns: 1fr 3fr; */
+}
+
+.dashboard img {
+    width: 50px;
+}
+
+.front-nav img {
+    width: 25px;
+}
+
+.back-nav img {
+    width: 25px;
 }
 
 .main {
