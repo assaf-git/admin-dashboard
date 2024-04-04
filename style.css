@@ -6,6 +6,7 @@
     border: 2px solid black;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
     grid-template-areas: 
     "sidebar header"
     "sidebar main";
@@ -78,9 +79,10 @@
 
 .sidebar {
     padding: 10px;
+    height: 450px;
     grid-area: sidebar;
     display: grid;
-    grid-template-rows: 1fr 6fr 3fr;
+    grid-template-rows: 1fr 3fr 1.5fr;
     grid-template-areas: 
     "dashboard"
     "front-nav"
@@ -98,7 +100,7 @@
 }
 
 .dashboard-img img {
-    width: 50px;
+    width: 40px;
 }
 
 .dashboard-img {
@@ -116,6 +118,7 @@
     grid-template-areas: 
     "home-img home-text";
     align-items: center;
+    row-gap: 5px;
 }
 
 .front-nav img {
@@ -137,6 +140,7 @@
     grid-template-areas: 
     "settings-img settings-text";
     align-items: center;
+    row-gap: 5px;
 }
 
 .back-nav img {
