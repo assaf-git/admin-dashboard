@@ -79,7 +79,6 @@
 
 .sidebar {
     padding: 10px;
-    /* height: 450px; */
     background-color: rgb(95, 144, 252);
     grid-area: sidebar;
     display: grid;
@@ -157,7 +156,33 @@
 }
 
 .main-content {
+    /* padding: 20px 10px; */
     background-color: rgb(206, 206, 206);
-    display: grid;
     grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "projects announcements"
+    "projects trending";
+}
+
+.your-projects {
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.your-projects h3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.announcements {
+    grid-area: announcements;
+    display: grid;
+}
+
+.trending {
+    grid-area: trending;
+    display: grid;
 }
