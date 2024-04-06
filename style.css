@@ -178,6 +178,7 @@
 .y-p-header {
     grid-area: 1 / 1 / 2 / 3;
     padding-top: 20px;
+    /* flex this item for alignment? */
 }
 
 .y-p-header ~ div {
@@ -219,4 +220,42 @@
 .trending {
     grid-area: trending;
     display: grid;
+    padding: 20px;
+    gap: 20px;
+}
+
+.t-header ~ div {
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 4px;
+    display: grid;
+    /* grid-template-rows: 1fr; */
+    gap: 20px;
+    padding: 10px;
+}
+
+.t-container > div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* grid-template-areas: 
+    "t-image t-handle"
+    "t-image t-subject"; */
+ }
+
+ .t-container > div div {
+    display: grid;
+ }
+
+.t-header ~ div img {
+    width: 25px;
+    grid-area: t-image; /* Not sure why this centers image? */
+}
+
+/* .t-header ~ div h6 {
+    grid-area: t-handle;
+    grid-area: 1 / 2 / 2 / 3;
+} */
+
+.t-header ~ div p {
+    font-size: small;
 }
