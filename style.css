@@ -170,11 +170,26 @@
     grid-area: projects;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr 5fr 5fr;
 }
 
-.your-projects h3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+/* .your-projects h3 { */
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-area: 1 / 1 / 2 / 3; */
+    /* justify-self: start; */
+    /* gap: 10px; */
+
+
+.m-c-header {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.m-c-header ~ div {
+    /* gap: 10px 5px; */
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
 }
 
 .announcements {
