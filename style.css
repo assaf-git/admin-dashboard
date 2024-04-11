@@ -99,6 +99,7 @@
 .sidebar {
     padding: 10px;
     background-color: rgb(26,146,212);
+    color: white;
     grid-area: sidebar;
     display: grid;
     grid-template-rows: 1fr 3fr 1.5fr 3fr;
@@ -124,6 +125,7 @@
 
 .dashboard-img {
     grid-area: dashboard-img;
+    filter: invert(100%);
 }
 
 .dashboard-text {
@@ -142,6 +144,7 @@
 
 .front-nav img {
     width: 25px;
+    filter: invert(100%);
 }
 
 .home-img {
@@ -164,6 +167,7 @@
 
 .back-nav img {
     width: 25px;
+    filter: invert(100%);
 }
 
 .settings-img {
