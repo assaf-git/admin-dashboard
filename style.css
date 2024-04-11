@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: Roboto Flex, sans-serif;
 }
 
 .container {
@@ -195,8 +196,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 5fr 5fr 5fr;
-    padding: 0 20px 30px;
-    gap: 20px;
+    padding: 0px 20px 0px;
+    gap: 10px;
+    line-height: 1.5;
 }
 
 .y-p-header {
@@ -210,11 +212,17 @@
     background-color: white;
     border: solid 1px black;
     border-radius: 4px;
+    box-shadow: inset 6px 0px 0px 0px #F0B429;
     padding: 20px;
     display: grid;
-    grid-template-rows: 2fr 1fr;
-    align-items: center;
+    grid-template-rows: 3fr 1fr;
+    align-items: start;
     justify-items: end;
+}
+
+.y-p-header ~ div p {
+    color: gray;
+    font-size: 14px;
 }
 
 .y-p-header ~ div img {
@@ -232,18 +240,25 @@
 
 .a-header {
     padding-top: 20px;
-    height: 40px; /* Maybe not necessary */
+    height: 38px; /* Maybe not necessary */
 }
 
 .a-header ~ div {
-    height: 300px;
+    /* height: 300px; */
     background-color: white;
     border: solid 1px black;
     border-radius: 4px;
     display: grid;
     gap: 20px;
     padding: 10px;
-    font-size: small;
+    /* padding-top: 10px; */
+    line-height: 1.5;
+    /* font-size: small; */
+}
+
+.a-header ~ div p {
+    color: gray;
+    font-size: 12px;
 }
 
 .trending {
@@ -261,7 +276,7 @@
 }
 
 .t-header ~ div {
-    /* height: 205px; */
+    height: 238px;
     background-color: white;
     border: solid 1px black;
     border-radius: 4px;
@@ -281,6 +296,7 @@
 
  .t-container > div div {
     display: grid;
+    align-items: center;
  }
 
 .t-header ~ div img {
