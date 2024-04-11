@@ -3,7 +3,6 @@
 }
 
 .container {
-    border: 2px solid black;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
@@ -20,7 +19,6 @@
     grid-template-areas: 
     "search user-p"
     "user-i buttons";
-    border: 1px solid gray;
     padding-left: 35px;
     padding-right: 35px;
 }
@@ -50,6 +48,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 20px;
 }
 
 .user-profile img {
@@ -81,7 +80,7 @@
 .header .header-buttons {
     grid-area: buttons;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding-left: 15px;
 }
@@ -181,6 +180,7 @@
 .main-content {
     /* padding: 20px 10px; */
     background-color: rgb(226,232,240);
+    box-shadow: inset 0px 4px 8px 0px #BABABA;
     grid-area: main;
     display: grid;
     grid-template-columns: 3fr 1fr;
