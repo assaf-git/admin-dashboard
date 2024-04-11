@@ -3,6 +3,10 @@
     font-family: Roboto Flex, sans-serif;
 }
 
+.hov:hover {
+    cursor: pointer;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -35,6 +39,10 @@
     border: none;
 }
 
+/* .search-bar button:hover {
+    cursor: pointer;
+} */
+
 .search-bar input {
     width: 100%;
     height: 25px;
@@ -55,6 +63,10 @@
     height: 25px;
     padding: 10px;
 }
+
+/* .user-profile img:hover {
+    cursor: pointer;
+} */
 
 .user-profile .u-p-img {
     height: 40px;
@@ -143,9 +155,17 @@
     filter: invert(100%);
 }
 
+/* .dashboard-img:hover {
+    cursor: pointer;
+} */
+
 .dashboard-text {
     grid-area: dashboard-text;
 }
+
+/* .dashboard-text:hover {
+    cursor: pointer;
+} */
 
 .front-nav {
     grid-area: front-nav;
@@ -161,6 +181,14 @@
     width: 25px;
     filter: invert(100%);
 }
+
+/* .front-nav img:hover {
+    cursor: pointer;
+}
+
+.front-nav p:hover {
+    cursor: pointer;
+} */
 
 .home-img {
     grid-area: home-img;
@@ -184,6 +212,14 @@
     width: 25px;
     filter: invert(100%);
 }
+
+/* .back-nav img:hover {
+    cursor: pointer;
+}
+
+.back-nav p:hover {
+    cursor: pointer;
+} */
 
 .settings-img {
     grid-area: settings-img;
@@ -241,7 +277,12 @@
 
 .y-p-header ~ div img {
     width: 25px;
+    padding-right: 15px;
 }
+/* 
+.y-p-header ~ div img:hover {
+    cursor: pointer;
+} */
 
 .announcements {
     height: 205px;
@@ -259,7 +300,7 @@
 .a-header ~ div {
     background-color: white;
     box-shadow: 4px 4px 4px #BABABA;
-    border-radius: 4px;
+    border-radius: 6px;
     display: grid;
     gap: 20px;
     padding: 10px;
@@ -288,7 +329,7 @@
     height: 238px;
     background-color: white;
     box-shadow: 4px 4px 4px #BABABA;
-    border-radius: 4px;
+    border-radius: 6px;
     display: grid;
     gap: 20px;
     padding: 10px;
