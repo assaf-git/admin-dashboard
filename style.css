@@ -112,7 +112,7 @@
 
 
 .sidebar {
-    padding: 10px;
+    padding-left: 20px;
     background-color: rgb(26,146,212);
     color: white;
     grid-area: sidebar;
@@ -223,9 +223,10 @@
 .y-p-header ~ div {
     height: 150px;
     background-color: white;
-    border: solid 1px black;
+    border-left: 6px solid #F0B429;
+    /* border: solid 1px black; */
     border-radius: 4px;
-    box-shadow: inset 6px 0px 0px 0px #F0B429;
+    box-shadow: 4px 4px 4px #BABABA;
     padding: 20px;
     display: grid;
     grid-template-rows: 3fr 1fr;
@@ -257,7 +258,7 @@
 
 .a-header ~ div {
     background-color: white;
-    border: solid 1px black;
+    box-shadow: 4px 4px 4px #BABABA;
     border-radius: 4px;
     display: grid;
     gap: 20px;
@@ -286,7 +287,7 @@
 .t-header ~ div {
     height: 238px;
     background-color: white;
-    border: solid 1px black;
+    box-shadow: 4px 4px 4px #BABABA;
     border-radius: 4px;
     display: grid;
     gap: 20px;
